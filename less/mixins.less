@@ -1,1 +1,14 @@
 // Mixins in here
+.button-maker (@color, @width, @height) {
+    background-color: @color;
+    height: @height;
+    border-radius: 10px;
+    width: @width;
+    color: white;
+    .flexbox-normal();
+    justify-content: center;
+}
+
+.btn {
+    .button-maker(teal; 80%; 34px)
+}
